@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+// Topics -  adding more functionality to text utils app.
+
+// Create app - npx create-react-app appname
+// Run app -  npm start
+// create componet code emmit - rfc  
+// component is writting in js only.
+// props are the properties that pass to the app component.
+
 import './App.css';
+import Navbar from './components/Navbar'
+import Textform from './components/Textform';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+   <Navbar title="CodeWithHeeren" about="About Us"/>
+   <div className="container my-3">
+      <Textform heading="Enter Text To Analyze" />
+   </div>
+  </> 
   );
 }
 
 export default App;
+
